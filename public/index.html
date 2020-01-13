@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Создание веб сайта</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body class="bg-light">
+
+<div class="wrapper">
+    <header class="my-5 bg-white">
+        <nav class="navbar py-3">
+          <div class="logo">
+            <a href="#" class="d-flex navbar-brand">
+              <img src="https://www.kcjt.si/Portals/k/adam/nnDoc/ryvGSBFwBEei4nT3-OA30g/Image/icon-70-512.png" alt="" class="d-inline-block rounded-circle">
+              <div class="pt-2 pl-3">
+                <p class="mb-0 text-dark">itProger</p>
+                <p class="mb-0 dark">Blog</p>
+              </div>
+            </a>
+          </div>
+          <div class="search">
+            <input type="search" placeholder="Поиск" class="p-2 border rounded searchInput" onclick="search()">
+          </div>
+          <div class="navButtons">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link bg-light border rounded text-dark" href="#">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bg-light border rounded text-dark ml-2" href="#">Статьи</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link bg-light border rounded text-dark ml-2" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <div class="hiddenSearch text-danger w-100 d-none">
+        <h2 class="font-weight-bold display-4">Форма поиска</h2>
+        <input type="text" placeholder="Поиск" class="d-block border-0 w-75 my-4 p-3 rounded">
+        <button class="btn btn-danger" onclick="closeSearch()">Закрыть</button>
+      </div>
+      <div class="jumbotron d-flex justify-content-between px-5 mb-5">
+        <div class="jumboText">
+          <h1 class="display-3 text-white font-weight-normal">3 основные сферы применения языка Python</h1>
+          <p class="text-white my-4">До начала активного изучения любого языка<br>программирования правильно было бы задуматься о сферах<br>его применения. Мы расскажем про 3 самые популярные<br>сферы применения языка Python.</p>
+          <a href="#" class="btn text-white p-2 rounded">Читать далее</a>
+        </div>
+        <div class="jumboImage ml-2">
+          <img src="https://research.mozilla.org/files/2017/05/mozrust.png" alt="" class="rounded">
+        </div>
+      </div>
+      <section class="d-flex justify-content-between mx-4 mb-5">
+        <div>
+          <h2 class="font-weight-bold text-dark">Новости</h2>
+          <div class="cardWrapper d-flex">
+            <div>
+              <div class="card left mr-5 mb-4">
+                <img src="https://itproger.com/img/news/1575703271.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">1 фильмов и сериалов для программистов</h5>
+                  <p class="card-text">Когда становишься на путь программирования очень хочется посмотреть какие-либо фильмы или же сериалы на эту тематику. Представляем вам подборку из 10 фильмов для программистов.</p>
+                  <a href="#" class="btn btn-warning stretched-link">Читать далее</a>
+                </div>
+              </div>
+              <div class="card left mr-5 mb-4">
+                <img src="https://itproger.com/img/news/1575703271.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">2 фильмов и сериалов для программистов</h5>
+                  <p class="card-text">Когда становишься на путь программирования очень хочется посмотреть какие-либо фильмы или же сериалы на эту тематику. Представляем вам подборку из 10 фильмов для программистов.Когда становишься на путь программирования очень хочется посмотреть какие-либо фильмы или же сериалы на эту тематику.</p>
+                  <a href="#" class="btn btn-warning stretched-link">Читать далее</a>
+                </div>
+              </div>
+              <div class="card left mr-5 mb-4 newArticles first d-none">
+                <img src="https://itproger.com/img/news/1575703271.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">5 фильмов и сериалов для программистов</h5>
+                  <p class="card-text">Когда становишься на путь программирования очень хочется посмотреть какие-либо фильмы или же сериалы на эту тематику. Представляем вам подборку из 10 фильмов для программистов.Когда становишься на путь программирования очень хочется посмотреть какие-либо фильмы или же сериалы на эту тематику.</p>
+                  <a href="#" class="btn btn-warning stretched-link">Читать далее</a>
+                </div>
+              </div>
+              <div class="card left mr-5 mb-4 newArticles first d-none">
+                <img src="https://itproger.com/img/news/1575703271.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">6 фильмов и сериалов для программистов</h5>
+                  <p class="card-text">Когда становишься на путь программирования очень хочется посмотреть какие-либо фильмы или же сериалы на эту тематику. Представляем вам подборку из 10 фильмов для программистов.</p>
+                  <a href="#" class="btn btn-warning stretched-link">Читать далее</a>
+                </div>
+              </div>
+              <div class="card left mr-5 mb-4 newArticles second d-none">
+                <img src="https://itproger.com/img/news/1575703271.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">9 фильмов и сериалов для программистов</h5>
+                  <p class="card-text">Когда становишься на путь программирования очень хочется посмотреть какие-либо фильмы или же сериалы на эту тематику. Представляем вам подборку из 10 фильмов для программистов.</p>
+                  <a href="#" class="btn btn-warning stretched-link">Читать далее</a>
+                </div>
+              </div>
+              <div class="card left mr-5 mb-4 newArticles second d-none">
+                <img src="https://itproger.com/img/news/1575703271.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">10 фильмов и сериалов для программистов</h5>
+                  <p class="card-text">Когда становишься на путь программирования очень хочется посмотреть какие-либо фильмы или же сериалы на эту тематику. Представляем вам подборку из 10 фильмов для программистов.</p>
+                  <a href="#" class="btn btn-warning stretched-link">Читать далее</a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card right ml-5 mb-4">
+                <img src="https://itproger.com/img/news/1575703271.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                 <h5 class="card-title">3 фильмов и сериалов для программистов</h5>
+                 <p class="card-text">Когда становишься на путь программирования очень хочется посмотреть какие-либо фильмы или же сериалы на эту тематику. Представляем вам подборку из 10 фильмов для программистов.</p>
+                 <a href="#" class="btn btn-warning stretched-link">Читать далее</a>
+                </div>
+              </div>
+              <div class="card right ml-5 mb-4">
+                <img src="https://itproger.com/img/news/1575703271.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">4 фильмов и сериалов для программистов</h5>
+                  <p class="card-text">Когда становишься на путь программирования очень хочется посмотреть какие-либо фильмы или же сериалы на эту тематику. Представляем вам подборку из 10 фильмов для программистов.</p>
+                  <a href="#" class="btn btn-warning stretched-link">Читать далее</a>
+                </div>
+              </div>
+              <div class="card right ml-5 mb-4 newArticles first d-none">
+                <img src="https://itproger.com/img/news/1575703271.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">7 фильмов и сериалов для программистов</h5>
+                  <p class="card-text">Когда становишься на путь программирования очень хочется посмотреть какие-либо фильмы или же сериалы на эту тематику. Представляем вам подборку из 10 фильмов для программистов.Когда становишься на путь программирования очень хочется посмотреть какие-либо фильмы или же сериалы на эту тематику.</p>
+                  <a href="#" class="btn btn-warning stretched-link">Читать далее</a>
+                </div>
+              </div>
+              <div class="card right ml-5 mb-4 newArticles first d-none">
+                <img src="https://itproger.com/img/news/1575703271.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">8 фильмов и сериалов для программистов</h5>
+                  <p class="card-text">Когда становишься на путь программирования очень хочется посмотреть какие-либо фильмы или же сериалы на эту тематику. Представляем вам подборку из 10 фильмов для программистов.Когда становишься на путь программирования очень хочется посмотреть какие-либо фильмы или же сериалы на эту тематику.</p>
+                  <a href="#" class="btn btn-warning stretched-link">Читать далее</a>
+                </div>
+              </div>
+              <div class="card right ml-5 mb-4 newArticles second d-none">
+                <img src="https://itproger.com/img/news/1575703271.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">11 фильмов и сериалов для программистов</h5>
+                  <p class="card-text">Когда становишься на путь программирования очень хочется посмотреть какие-либо фильмы или же сериалы на эту тематику. Представляем вам подборку из 10 фильмов для программистов.</p>
+                  <a href="#" class="btn btn-warning stretched-link">Читать далее</a>
+                </div>
+              </div>
+              <div class="card right ml-5 mb-4 newArticles second d-none">
+                <img src="https://itproger.com/img/news/1575703271.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">12 фильмов и сериалов для программистов</h5>
+                  <p class="card-text">Когда становишься на путь программирования очень хочется посмотреть какие-либо фильмы или же сериалы на эту тематику. Представляем вам подборку из 10 фильмов для программистов.</p>
+                  <a href="#" class="btn btn-warning stretched-link">Читать далее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="font-weight-bold text-dark">Анонсы</h2>
+          <p class="bg-white newsText p-4 rounded">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quaerat maxime accusantium iusto sapiente nostrum laudantium tempore eligendi iure aliquam?</p>
+          <div class="card newsCard mt-3 p-3 bg-info">
+            <img src="https://itproger.com/img/news/1575703271.jpeg" class="card-img-top rounded" alt="...">
+            <div class="card-body">
+              <p class="card-text text-white">Когда становишься на путь программирования очень хочется посмотреть какие-либо фильмы или же сериалы на эту тематику. Представляем вам подборку из 10 фильмов для программистов.</p>
+              <a href="#" class="btn btn-light stretched-link">Читать далее</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <button class="btn btn-danger mb-5 d-block btn1" onclick="moreArticles()">Подгрузить больше</button>
+      <button class="btn btn-danger mb-5 d-none btn2" onclick="moreArticles2()">Подгрузить больше</button>
+      <footer class="border-bottom-0 text-center font-weight-bold bg-white">
+        <p class="mb-0">Все права защищены &copy;</p>
+      </footer>
+</div> 
+<div class="opacity bg-secondary d-none"></div>
+
+<script src="js/index.js"></script>
+</body>
+</html>

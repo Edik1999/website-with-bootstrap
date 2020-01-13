@@ -1,0 +1,227 @@
+@import "vars"
+
+body
+    font-family: $ff
+    margin: 0
+    padding: 0
+    outline: none
+    .wrapper
+        padding-left: 5%
+        padding-right: 5%
+        header
+            border-radius: $borderRadius
+            border-bottom: 2px solid #dedcdf
+            img.rounded-circle
+                border: 2px solid #955c63
+                width: 90px
+                height: 90px
+                transition: all 0.7s ease
+                &:hover
+                    transform: rotate(360deg)
+            p
+                font-weight: 800
+                font-size: 26px
+                &.dark
+                    color: #883137
+            .search
+                margin-left: 20%    
+                input
+                    width: 300px
+        .jumbotron
+            background: #90292a
+            border: 2px solid #60141d
+            a
+                background: #d82d3d
+                text-decoration: none
+                font-size: 18px
+                &:hover
+                    background: #b31624
+            img
+                max-width: 100%
+                border: $whiteBorder
+            p
+                &.text-white
+                    font-size: 22px
+        section   
+            .card
+                width: $cardWidth
+            p.bg-white
+                width: $cardWidth
+            .card img.rounded
+                border: $whiteBorder
+            .card-title
+                font-weight: 600
+            .card-text
+                font-weight: 500
+        button
+            margin-left: 25%
+        footer
+            height: 100px
+            line-height: 100px
+            border: 2px solid #e9e7e8
+            border-top-left-radius: $borderRadius
+            border-top-right-radius: $borderRadius
+        .hiddenSearch
+            position: fixed
+            z-index: 6
+            margin-left: 6.5%
+            button
+                margin-left: 0
+    .opacity
+        opacity: 0.8
+        position: fixed
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        width: auto
+        height: auto
+        z-index: 5
+
+@media screen and ( max-width: 1700px )
+    body
+        .wrapper
+            section
+                // flex-direction: column
+                .card
+                    margin: 0!important
+                    margin-bottom: 5%!important
+                .left
+                    margin-right: 5vw!important    
+            button
+                margin-left: auto
+                margin-right: auto   
+
+@media screen and ( max-width: 1250px )
+    body
+        .wrapper
+            header
+                .search
+                    margin-left: 0
+            .jumbotron
+                .jumboText
+                    margin-bottom: 5%
+                .jumboImage
+                    margin-left: 0!important
+                h1
+                    font-size: 3.5rem
+                p.text-white
+                    font-size: 20px
+            section
+                .card-text
+                    font-size: 0.9rem!important
+                    line-height: 1.2!important
+                .card-title
+                    font-size: 1.05rem
+                p.bg-white
+                    font-size: 0.9rem!important
+                    line-height: 1.2!important
+
+@media screen and ( max-width: 1023px )
+    body
+        .wrapper
+            section
+                flex-direction: column
+                .card
+                    margin: 0!important
+                    width: 40vw
+                    margin-bottom: 5%!important
+                .left
+                    margin-right: 5vw!important    
+                p.bg-white
+                    width: 40vw
+                .newsText
+                    width: 85vw!important
+                .newsCard
+                    width: 85vw
+              
+@media screen and ( max-width: 983px )
+    body
+        .wrapper
+            header
+                .navButtons
+                    margin-left: auto
+                    margin-right: auto
+                    margin-top: 3%
+                .search
+                    margin-right: 10%   
+            .jumbotron
+                flex-direction: column
+                h1
+                    font-size: 3rem
+                p.text-white
+                    font-size: 18px
+            footer
+                height: 70px
+                line-height: 70px
+
+@media screen and ( max-width: 697px )
+    body
+        .wrapper
+            header
+                .search
+                    margin-top: 3%
+                    margin-left: auto
+                    margin-right: auto
+            section
+                .cardWrapper
+                    flex-direction: column
+                .card
+                    margin: 0!important
+                    width: 80vw
+                    margin-bottom: 5%!important
+                    margin-left: auto!important
+                    margin-right: auto!important
+                p.bg-white
+                    margin-left: auto!important
+                    margin-right: auto!important
+                    width: 80vw!important
+                .left
+                    margin-left: auto!important
+                    margin-right: auto!important
+
+@media screen and ( max-width: 631px )
+    body
+        .wrapper
+            header
+                .logo
+                    margin-left: auto
+                    margin-right: auto
+            .jumbotron
+                h1
+                    font-size: 2.3rem
+                p.text-white
+                    font-size: 16px
+                a
+                    font-size: 15px
+
+@media screen and ( max-width: 387px )
+    body
+        .wrapper
+            header
+                .navButtons
+                    font-size: 12px
+                .search  
+                    input
+                        width: 260px
+            .jumbotron
+                h1
+                    font-size: 1.7rem
+                p.text-white
+                    font-size: 14px
+                a
+                    font-size: 13px
+
+@media screen and ( max-width: 332px )
+    body
+        .wrapper
+            header
+                .navButtons
+                    font-size: 11px
+            .jumbotron
+                h1
+                    font-size: 1.4rem
+                p.text-white
+                    font-size: 12px
+                a
+                    font-size: 11px
